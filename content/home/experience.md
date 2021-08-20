@@ -17,13 +17,30 @@ date_format = "Jan 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
+
+[[experience]]
+  title = "Senior Software Engineer"
+  company = "Alteryx Innovation Labs"
+  company_url = "https://www.alteryx.com/innovation-labs"
+  location = "Boston, MA"
+  date_start = "2020-06-01"
+  date_end = ""
+  description = """\n
+
+  **Technical Leadership:** Led the planning and implementation of several key features of [EvalML](https://github.com/alteryx/evalml), a python package for automated machine learning (AutoML). These include [parallel computation](https://evalml.alteryx.com/en/stable/user_guide/automl.html#Parallel-AutoML) of machine learning pipelines, time series modelling, and explaining predictions of black-box models with [SHAP](https://evalml.alteryx.com/en/stable/user_guide/model_understanding.html#Explaining-Predictions).
+
+  **Building an Open Source Community:** Actively review proposed changes and answer questions from the open source users of EvalML. To date, this amounts to reviewing 500 Pull Requests in the year in since I joined as well as filing 150 issues for bugs and improvements. Primary creator and maintainer of EvalML's [conda package](https://anaconda.org/conda-forge/evalml), which is the primary way open source users can install our package on Windows.
+
+  **DevOps:** Sped up EvalML's CI testing by a factor of 5 (50 minutes to 10 minutes) by speeding up the 100 slowest tests that contributed to 98% of the total runtime and by reconfiguring our GitHub Actions testing pipeline to run tests in parallel. Also created a per-commit build and test of our conda package to identify regressions before new versions of EvalML are released. 
+  """
+
 [[experience]]
   title = "Software Engineer"
   company = "Aptiv Autonomous Mobility"
   company_url = "https://www.aptiv.com/autonomous-mobility"
   location = "Boston, MA"
   date_start = "2018-08-01"
-  date_end = ""
+  date_end = "2020-06-01"
   description = """\n
 
   **Data Engineering:** Wrote software library for efficiently training deep learning models on 60 hours (200 GB) of log data collected from autonomous vehicles. Engineered a data pipeline for parsing data from vehicle logs, preprocessing data, and storing in MongoDB database. Use of my software was instrumental in releasing [CoverNet](https://arxiv.org/pdf/1911.10298.pdf), a novel deep learning algorithm for predicting trajectories of vehicles with 40% improvement over state of the art.
