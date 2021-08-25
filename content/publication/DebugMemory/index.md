@@ -15,7 +15,7 @@ publishDate: "2021-08-20T00:00:00Z"
 publication_types: ["0"]
 
 
-abstract: In this blog post, I will show how we diagnosed and fixed a memory problem in [EvalML](https://github.com/alteryx/evalml), the open-source AutoML library developed by Alteryx Innovation Labs. There is no magic recipe for solving memory problems, but my hope is that developers, specifically Python developers, can learn about tools and best practices they can leverage when they run into this kind of problem in the future.
+abstract: In this blog post, I will show how we diagnosed and fixed a memory problem in [EvalML](https://github.com/alteryx/evalml), the open-source AutoML library developed by Alteryx Innovation Labs. There is no magic recipe for solving memory problems, but my hope is that developers, specifically Python developers, can learn about tools and best practices they can leverage when they run into this kind of problem in the future. Click [here](https://innovation.alteryx.com/how-to-troubleshoot-memory-problems-in-python/) to read the full post.
 
 # Summary. An optional shortened abstract.
 summary: I provide a case study of how to debug memory problems in python using open source tools. Covered in the [Real Python Podcast](https://realpython.com/podcasts/rpp/68/#t=2368)! 
@@ -25,7 +25,7 @@ tags:
 featured: true
 
 links:
-- name: Blog
+- name: Web
   url: https://innovation.alteryx.com/how-to-troubleshoot-memory-problems-in-python/
 - name: Real Python Podcast
   url: https://realpython.com/podcasts/rpp/68/#t=2368
