@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Data Scientist & Software Engineer
+role: Software Engineer and Data Scientist
 
 # Organizations/Affiliations
 organizations:
@@ -18,13 +18,12 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a data scientist and software engineer who enjoys building open source tools for datascience.
+bio: I am a data scientist and software engineer who enjoys building open source tools for machine learning.
 
 interests:
-- Open Source data science software
+- Open Source ML software
+- Web Development
 - Machine Learning
-- Analyzing Data at Scale
-- Probabilistic Programming
 - Trivia
 
 education:
@@ -69,6 +68,6 @@ user_groups:
 - Visitors
 ---
 
-I'm a senior software engineer at the [Alteryx Innovation Labs](https://www.alteryx.com/innovation-labs) where I am a primary contributor to [EvalML](https://github.com/alteryx/evalml), a python package for automated machine learning (AutoML). I believe open source tools are needed to make breakthroughs in data science. 
+I'm a software engineer specializing in the intersection of open source software and artificial intelligence. I'm currently at [Hugging Face](https://huggingface.co/), where I spend most of my time developing [Gradio](https://www.gradio.app/), an open-source python package for building AI-powered web applications with little code.
 
-Previously, I was a software engineer at [Aptiv](https://www.aptiv.com/autonomous-mobility), where I built tools to train deep learning models of driver behavior for autonomous vehicles. Prior to Aptiv, I worked as a data scientist at [Nielsen](https://www.nielsen.com/us/en/) leveraging thousands of hours of television viewing data to build machine learning models to calculate television ratings. 
+Previously, I worked at the [Alteryx Innovation Labs](https://www.alteryx.com/innovation-labs) where I was a lead engineer on [EvalML](https://github.com/alteryx/evalml), a python package for automated machine learning (AutoML). I got my start in software at [Motional](https://motional.com/), developing tools to train deep learning models of driver behavior for autonomous vehicles. Out of college, I worked as a data scientist at [Nielsen](https://www.nielsen.com/us/en/) leveraging thousands of hours of television viewing data to build machine learning models to calculate television ratings. 

@@ -19,12 +19,25 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[experience]]
+  title = "Software Engineer"
+  company = "Hugging Face 🤗"
+  company_url = "https://huggingface.co/"
+  location = "Remote"
+  date_start = "2022-07-01"
+  date_end = ""
+  description = """\n
+
+  **Technical Leadership:** Played a key role in Gradio's growth from 30k to 900k monthly active developers by contributing to all parts of Gradio's stack: backend server, frontend, client libraries, continuous integration. I co-lead the development of Gradio's custom components, a full-stack toolchain and API for developers to create their own Gradio components and include them in any Gradio application.
+  """
+
+
+[[experience]]
   title = "Senior Software Engineer"
   company = "Alteryx Innovation Labs"
   company_url = "https://www.alteryx.com/innovation-labs"
   location = "Boston, MA"
   date_start = "2020-06-01"
-  date_end = ""
+  date_end = "2022-07-01"
   description = """\n
 
   **Technical Leadership:** Led the planning and implementation of several key features of [EvalML](https://github.com/alteryx/evalml), a python package for automated machine learning (AutoML). These include [parallel computation](https://evalml.alteryx.com/en/stable/user_guide/automl.html#Parallel-AutoML) of machine learning pipelines, time series modelling, and explaining predictions of black-box models with [SHAP](https://evalml.alteryx.com/en/stable/user_guide/model_understanding.html#Explaining-Predictions).
