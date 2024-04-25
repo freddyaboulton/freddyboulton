@@ -10,6 +10,7 @@ const config = {
 	extensions: ['.svelte', '.md'],
 
 	preprocess: [
+		// enable tailwind below
 		vitePreprocess(),
 		mdsvex({
 			// The default mdsvex extension is .svx; this overrides that.
