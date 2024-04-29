@@ -18,7 +18,7 @@
 </svelte:head>
 
 
-<h1>Blog category: {category}</h1>
+<h1 class="text-xl text-primary font-bold mb-3">Blog category: {category}</h1>
 
 {#if posts.length}
 	<PostsList posts={posts} />

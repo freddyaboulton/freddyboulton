@@ -1,4 +1,4 @@
-# SvelteKit static blog starter
+<h1 class="font-bold text-2xl flex justify-center mb-3"> SvelteKit static blog starter</h1>
 
 This starter contains everything you need to get up and running with
 [SvelteKit](https://kit.svelte.dev/) as a static site generator for your
@@ -7,7 +7,7 @@ Markdown (and Svelte)-powered blog.
 view the
 [GitHub repo here](https://github.com/josh-collinsworth/sveltekit-blog-starter).
 
-## Features
+<h1 class="font-bold text-2xl mt-1 mb-1"> Features</h1>
 
 - 🎉 **Fully up-to-date with SvelteKit 2!**
 - ⚡️ **Super fast static site generation with hydration**. Every route is

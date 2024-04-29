@@ -3,9 +3,9 @@
 </script>
 
 
-<ul class="posts-list">
+<ul>
 	{#each posts as post}
-		<li>
+		<li class="mb-10 ">
 			<article>
 				<a href="/blog/{post.slug}">
 					<img
@@ -14,14 +14,15 @@
 					width={post.coverWidth}
 					height={post.coverHeight}
 					style="ratio: {post.coverWidth} / {post.coverHeight}"
+					class="rounded-lg w-[100%] mb-3"
 					/>
-					<h2>
+					<h2 class="text-xl font-bold text-primary">
 						{post.title}
 					</h2>
 				</a>
 			</article>
 
-			<p>{post.excerpt}</p>
+			<p class="text-sm text-lighter font-medium" >{post.excerpt}</p>
 		</li>
 	{/each}
 </ul>

@@ -1,12 +1,12 @@
 <script>
-	import { navItems } from '$lib/config';
-	import NavItem from './NavItem.svelte';
-</script>
-
-<ul>
+	import { navItems } from "$lib/config";
+	import NavItem from "./NavItem.svelte";
+  </script>
+  
+  <ul class="flex justify-between w-[200px] text-accent flex-col md:flex-row">
 	{#each navItems as page}
-		<NavItem href={page.route}>
-			{page.title}
-		</NavItem>
+	  <NavItem href={page.route}>
+		{page.title}
+	  </NavItem>
 	{/each}
-</ul>
+  </ul>

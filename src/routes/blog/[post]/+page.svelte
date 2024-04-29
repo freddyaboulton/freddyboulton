@@ -22,35 +22,44 @@
 	<!-- <meta name="twitter:image" content="https://yourdomain.com/image_path" /> -->
 </svelte:head>
 
-<article class="post">
+<article class="mt-10">
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
+	<div class="w-[100%] flex items-center">
+		<h3 class="font-bold text-sm">Published:</h3>
+		<p class="font-semi text-sm text-lighter ml-2">{" "}{date}</p>
+	</div>
+	<h1 class="text-xl font-bold text-primary mb-1">{title}</h1>
+
 	<img
-		class="cover-image"
 		src={coverImage}
 		alt=""
 		style="aspect-ratio: {coverWidth} / {coverHeight};"
 		width={coverWidth}
 		height={coverHeight}
-	/>
+		class="rounded-lg w-[100%] mb-1"
+		/>
 
-	<h1>{title}</h1>
-
-	<div class="meta">
+		<div class="w-[100%] flex items-center mb-3">
+			<h3 class="font-bold text-sm">Updated:</h3>
+			<p class="font-semi text-sm text-lighter ml-2">{" "}{updated}</p>
+		</div>
+	<!-- <div class="w-[100%]">
 		<b>Published:</b>
 		{date}
 		<br />
 		<b>Updated:</b>
 		{updated}
-	</div>
+	</div> -->
+	
 
 	<svelte:component this={PostContent} />
 
 	{#if categories}
-		<aside class="post-footer">
-			<h2>Posted in:</h2>
-			<ul class="post-footer__categories">
+		<aside class="mb-5 ">
+			<h2 class="font-bold text-sm underline">Posted in:</h2>
+			<ul class="list-disc pl-4">
 				{#each categories as category}
-					<li>
+					<li class="font-semibold text-sm text-lighter">
 						<a href="/blog/category/{category}/">
 							{category}
 						</a>

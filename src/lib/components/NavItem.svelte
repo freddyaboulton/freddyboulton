@@ -1,24 +1,25 @@
 <script>
-	import { currentPage, isMenuOpen } from '../assets/js/store';
-
+	import { currentPage, isMenuOpen } from "../assets/js/store";
+  
 	export let href;
-
+  
 	$: isCurrentPage = $currentPage.startsWith(href);
-
+  
 	const maybeCloseMenu = () => {
-		if (href != $currentPage) {
-			isMenuOpen.set(false);
-		}
+	  if (href != $currentPage) {
+		isMenuOpen.set(false);
+	  }
 	};
-</script>
-
-<li>
+  </script>
+  
+  <li class="text-sm sm:text-base md:text-lg text-secondary md:text-accent p-2">
 	<a
-		{href}
-		on:click={maybeCloseMenu}
-		class:active={isCurrentPage}
-		aria-current={isCurrentPage ? 'page' : false}
+	  {href}
+	  on:click={maybeCloseMenu}
+	  class:active={isCurrentPage}
+	  aria-current={isCurrentPage ? "page" : false}
+	  class={isCurrentPage ? "font-semibold underline" : ""}
 	>
-		<slot />
+	  <slot />
 	</a>
-</li>
+  </li>
