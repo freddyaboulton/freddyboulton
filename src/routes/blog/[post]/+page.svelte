@@ -22,7 +22,8 @@
 	<!-- <meta name="twitter:image" content="https://yourdomain.com/image_path" /> -->
 </svelte:head>
 
-<article class="mt-10">
+
+<article class="prose">
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
 	<div class="w-[100%] flex items-center">
 		<h3 class="font-bold text-sm">Published:</h3>
