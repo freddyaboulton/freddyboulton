@@ -25,7 +25,7 @@
 
 <article class="prose">
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
-	<h1 class="text-xl font-bold text-secondary mb-1">{title}</h1>
+	<h1 class="text-3xl font-bold text-secondary mb-1">{title}</h1>
 
 	<img
 		src={coverImage}
