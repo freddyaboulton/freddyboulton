@@ -70,7 +70,7 @@
 		tabindex="-1"
 		in:fade|global={transitionIn}
 		out:fade|global={transitionOut}
-		class="max-w-screen-md mx-auto mt-10 mb-10"
+		class="max-w-screen-md mx-auto mt-10 mb-10 min-h-[73vh]"
 	  >
 		<slot />
 	  </main>
