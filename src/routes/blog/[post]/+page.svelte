@@ -25,11 +25,11 @@
 
 <article class="prose">
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
-	<div class="w-[100%] flex items-center">
-		<h3 class="font-bold text-sm">Published:</h3>
-		<p class="font-semi text-sm text-lighter ml-2">{" "}{date}</p>
+	<div class="w-[100%] flex items-center gap-2">
+		<h3 class="font-bold text-sm m-0">Published:</h3>
+		<p class="font-semi text-sm text-lighter m-0">{" "}{date}</p>
 	</div>
-	<h1 class="text-xl font-bold text-primary mb-1">{title}</h1>
+	<h1 class="text-xl font-bold text-secondary mb-1">{title}</h1>
 
 	<img
 		src={coverImage}
@@ -37,12 +37,12 @@
 		style="aspect-ratio: {coverWidth} / {coverHeight};"
 		width={coverWidth}
 		height={coverHeight}
-		class="rounded-lg w-[100%] mb-1"
+		class="rounded-lg w-[100%] mb-1 mt-1"
 		/>
 
-		<div class="w-[100%] flex items-center mb-3">
-			<h3 class="font-bold text-sm">Updated:</h3>
-			<p class="font-semi text-sm text-lighter ml-2">{" "}{updated}</p>
+		<div class="w-[100%] flex items-center mb-3 gap-2">
+			<h3 class="font-bold text-sm m-0">Updated:</h3>
+			<p class="font-semi text-sm text-lighter m-0">{" "}{updated}</p>
 		</div>
 	<!-- <div class="w-[100%]">
 		<b>Published:</b>

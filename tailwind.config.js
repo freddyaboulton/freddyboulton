@@ -8,12 +8,13 @@ export default {
     extend: {
       colors: {
         // Define your color palette
-        primary: "#606C38", // Dark Olive Green
-        secondary: "#283618", // Dark Green
+        primary: "#F0EFEA", // Dark Olive Green
+        secondary: "#141413", // Dark Green
         accent: "#FEFAE0", // Cream
         highlight: "#DDA15E", // Tan
         warning: "#BC6C25", // Light Brown
-        lighter:"#6B6B6B"
+        lighter:"#6B6B6B",
+        divider:"#dee2e6"
       },
       fontFamily: {
         // Define your font families
