@@ -62,7 +62,7 @@
 	  The below markup is used on every page in the site. The <slot> is where the page's
 	  actual contents will show up.
   -->
-  <div class:open={$isMenuOpen} style="background-color: #F0EFEA">
+  <div class:open={$isMenuOpen} class="bg-primary">
 	<Header />
 	{#key data.path}
 	  <main

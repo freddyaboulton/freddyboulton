@@ -15,6 +15,7 @@ export default {
         warning: "#BC6C25", // Light Brown
         lighter:"#6B6B6B",
         divider:"#dee2e6"
+        
       },
       fontFamily: {
         // Define your font families

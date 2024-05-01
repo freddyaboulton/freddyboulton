@@ -5,7 +5,7 @@
 
   </script>
   
-  <header>
+  <header class="sticky top-0 bg-primary z-10 ">
 	<div
 	  class="w-full mx-auto max-w-screen-2xl p-4 flex items-center justify-between"
 	>
