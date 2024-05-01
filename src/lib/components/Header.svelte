@@ -1,25 +1,18 @@
 <script>
-	import MainNav from './MainNav.svelte'
-	import HamburgerMenuButton from './HamburgerMenuButton.svelte'
-	import { siteTitle } from '$lib/config'
+	import MainNav from "./MainNav.svelte";
+	import { siteTitle } from "$lib/config";
+  
 
-	const focusMain = () => {
-		const main = document.querySelector('main');
-		main.focus();
-	}
-</script>
-
-
-<header>
-	<a on:click|preventDefault={focusMain} class="skip-to-content-link" href="#main">
-		Skip to main content
-	</a>
-	
-	<a href="/" class="site-title">
+  </script>
+  
+  <header class="sticky top-0 bg-primary z-10 ">
+	<div
+	  class="w-full mx-auto max-w-screen-2xl p-4 flex items-center justify-between"
+	>
+  
+	  <a href="/" class="text-secondary font-bold text-sm sm:text-base md:text-xl">
 		{siteTitle}
-	</a>
-	
-	<HamburgerMenuButton />
-	<MainNav />
-
-</header>
+	  </a>
+	  <MainNav />
+	</div>
+  </header>

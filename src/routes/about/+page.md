@@ -1,8 +1,9 @@
 <svelte:head>
-	<title>About</title>
+	<title >About</title>
 </svelte:head>
 
-# About
+
+- **About**
 
 This is an example of how you can have _markdown_ in page content!
 

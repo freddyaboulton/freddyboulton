@@ -57,7 +57,7 @@ Of course, mdsvex supports Svelte highlighting, too:
 	export let myProp = undefined;
 </script>
 
-<div>
+<div >
 	<MyComponent prop={myProp}>
 </div>
 ```
