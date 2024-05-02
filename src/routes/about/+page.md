@@ -2,8 +2,11 @@
 	<title >About</title>
 </svelte:head>
 
+<article class="prose">
 
-- **About**
+# ABOUT ABOUT 
+
+**About**
 
 This is an example of how you can have _markdown_ in page content!
 
@@ -20,3 +23,6 @@ src/routes/about/+page.md
 ```
 
 Here's the [home link](/) if you wanna go back.
+
+</article>
+

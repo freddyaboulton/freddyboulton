@@ -12,7 +12,7 @@
 	<meta data-key="description" name="description" content={siteDescription}>
 </svelte:head>
 
-<h1 class="text-secondary flex justify-start mx-auto w-[100%] text-4xl font-bold mb-5 mt-10">Blogs</h1>
+<h1 class="text-secondary flex justify-start mx-auto w-[100%] text-4xl font-bold mb-5 mt-10">Posts</h1>
 
 <PostsList posts={data.posts} />
 

@@ -1,12 +1,16 @@
 import { error } from '@sveltejs/kit'
 
-export const load = async () => {
+export const load = async ({url, fetch}) => {
 	try {
-		const ReadMeFile = await import('../../README.md')
-		const ReadMe = ReadMeFile.default
+
+		const page_markdown = await import(`./page.md`)
+
+		const postRes = await fetch(`${url.origin}/api/posts.json`)
+		const posts = await postRes.json()
 		
 		return {
-			ReadMe
+			posts,
+			page_markdown: page_markdown.default
 		}
 	}
 	catch(err) {
