@@ -12,7 +12,7 @@
 	};
   </script>
   
-  <li class="text-sm sm:text-base md:text-lg text-secondary p-2">
+  <li class="text-sm sm:text-base md:text-lg p-2">
 	<a
 	  {href}
 	  on:click={maybeCloseMenu}

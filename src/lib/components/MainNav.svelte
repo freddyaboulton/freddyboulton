@@ -20,7 +20,7 @@
 	<!-- Dropdown men -->
 	<div
 	  id="dropdownHover"
-	  class="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-[45px] right-0 mt-1"
+	  class="z-10 border-4 border-black divide-y divide-gray-100 rounded-lg shadow w-44 absolute top-[45px] right-0 mt-1"
 	  class:hidden={$isMenuOpen ? "" : "hidden"}
 	>
 	  <NavItems />

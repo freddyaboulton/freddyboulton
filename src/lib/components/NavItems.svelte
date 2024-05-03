@@ -3,7 +3,7 @@
 	import NavItem from "./NavItem.svelte";
   </script>
   
-  <ul class="flex w-[200px] text-secondary  flex-col md:flex-row">
+  <ul class="no-bullets flex w-[200px] text-secondary flex-col md:flex-row">
 	{#each navItems as page}
 	  <NavItem href={page.route}>
 		{page.title}
