@@ -6,7 +6,7 @@
  **/ 
 
 export const siteTitle = 'Freddy A. Boulton'
-export const siteDescription = 'Built with the SvelteKit Static Blog Starter'
+export const siteDescription = 'My personal blog.'
 export const siteURL = 'freddyboulton.com'
 export const siteLink = 'https://freddyboulton.com/blog'
 export const siteAuthor = 'Freddy A Boulton'
