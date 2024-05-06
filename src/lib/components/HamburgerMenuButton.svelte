@@ -3,8 +3,7 @@
 	import HamburgerSVG from "./svg/HamburgerSVG.svelte";
 	import XSVG from "./svg/XSVG.svelte";
   
-	export let closeOnly = false;
-  
+	export let closeOnly = false;  
 	const toggleIsMenuOpen = () => {
 	  isMenuOpen.set(!$isMenuOpen);
 	};

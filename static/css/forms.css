@@ -6,8 +6,8 @@ button,
 input[type=submit] {
 	font-size: 1rem;
 	padding: 0.5rem 1rem;
-	background: var(--darker);
-	color: var(--paper);
+	/* background: var(--darker);
+	color: var(--paper); */
 	font-weight: bold;
 	border: 2px solid var(--darker);
 	border-radius: 0.125rem;
