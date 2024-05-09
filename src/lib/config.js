@@ -12,7 +12,7 @@ export const siteLink = 'https://freddyboulton.com/blog'
 export const siteAuthor = 'Freddy A Boulton'
 
 // Controls how many posts are shown per page on the main blog index pages
-export const postsPerPage = 10
+export const postsPerPage = 100
 
 // Edit this to alter the main nav menu. (Also used by the footer and mobile nav.)
 export const navItems = [
