@@ -129,7 +129,7 @@ Files are returned as dictionaries with several keys but the most important is `
 We worked through a simple Gradio application but the same approach will work for more complex cases.
 There are a few things you should keep in mind that we didn't need for this example:
 
-#### Files must be uploaded if they are used as inputs to a request
+**Files must be uploaded if they are used as inputs to a request**
 
 You can upload files to the server using multipart form uploads using the `/upload` route. The input file type is the following:
 
@@ -144,7 +144,7 @@ You can upload files to the server using multipart form uploads using the `/uplo
 
 Note that if the file is already publicly available via a URL, then the `path` field can be null.
 
-#### You can provide a session_hash to uniquely identify your session
+**You can provide a session_hash to uniquely identify your session**
 
 The `POST` route accepts a `session_hash` key in the JSON data.
 Some applications (typically chatbots) use `gr.State` to keep track of the session history.
