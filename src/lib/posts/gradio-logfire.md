@@ -6,6 +6,8 @@ categories:
   - "gradio"
   - "observability"
   - "pydantic"
+coverImage: "/images/code_logfire.png"
+showCoverImage: false
 coverWidth: 16
 coverHeight: 9
 excerpt: A first look at Pydantic Logfire to monitor production gradio applications
