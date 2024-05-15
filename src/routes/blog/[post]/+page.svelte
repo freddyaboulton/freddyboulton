@@ -2,7 +2,7 @@
 <script>
 	export let data;
 
-	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } =
+	const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories, showCoverImage } =
 		data.meta;
 	const { PostContent } = data;
 </script>
@@ -16,10 +16,10 @@
 	<meta name="twitter:title" content={title} />
 	<meta property="og:description" content={excerpt} />
 	<meta name="twitter:description" content={excerpt} />
-	<meta property="og:image" content="https://www.freddyboulton.com/favicon.png" />
+	<meta property="og:image" content={coverImage ? `https://www.freddyboulton.com${coverImage}` : "https://www.freddyboulton.com/favicon.png" } />
 	<meta property="og:image:width" content={coverWidth} />
 	<meta property="og:image:height" content={coverHeight} />
-	<meta name="twitter:image" content="https://www.freddyboulton.com/favicon.png" />
+	<meta name="twitter:image" content={coverImage ? `https://www.freddyboulton.com${coverImage}` : "https://www.freddyboulton.com/favicon.png" } />
 </svelte:head>
 
 
@@ -27,7 +27,7 @@
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
 	<h1 class="text-3xl font-bold text-secondary mb-1">{title}</h1>
 	
-	{#if coverImage}
+	{#if !(showCoverImage === false) && coverImage}
 		<img
 			src={coverImage}
 			alt=""
