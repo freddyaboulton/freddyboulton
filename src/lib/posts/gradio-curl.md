@@ -8,6 +8,8 @@ categories:
   - "curl"
 coverWidth: 16
 coverHeight: 9
+coverImage: /images/curl_post.png
+showCoverImage: false
 excerpt: Learn how to use d Gradio's API via curl 💪
 ---
 
