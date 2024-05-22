@@ -25,11 +25,11 @@ Below are some cases where I think fine tuning is worth the effort.
 You should always start with prompt engineering instead of fine tuning since it's the quickest path to a minimum viable product. 
 But if, after several iterations of prompt engineering, the base model is not able to generate adequate responses, then fine tuning may push you past that plateau. 
 
-This point underscores the importance of setting up a good evaluation suite for your project. That's how you can objectively measure the quality of the system. 
+This point underscores the importance of setting up a good evaluation suite for your project. That's how you can objectively measure the quality of the responses. 
 
 ### 2. Prompt engineering is impractical
 
-For some problems, it is impractical to encode all of the context a model may need to correctly respond to the query. For example, prompting an LLM to generate code for proprietary domain-specific language from natural language. In this case, the entire "spec" of the language would have to be included in the prompt, which is either impossible or very costly as it takes up a large part of the context limit.
+For some problems, it is impractical to encode all of the context a model may need to correctly respond to the query in the prompt. For example, asking an LLM to generate code for a proprietary programming language. In this case, the entire "spec" of the language would have to be included in the prompt, which is either impossible or very costly as it takes up a large part of the context limit.
 
 ### 3. Your data gives you an edge
 
