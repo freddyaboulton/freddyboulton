@@ -133,13 +133,13 @@ There are a few things you should keep in mind that we didn't need for this exam
 
 **Files must be uploaded if they are used as inputs to a request**
 
-You can upload files to the server using multipart form uploads using the `/upload` route. Here is an example of how to do that with curl
+You can upload files to the server using multipart form uploads using the `/upload` route. Here is an example of how to do that with curl:
 
 ```bash
 curl -F files=@<path-to-file> <gradio-url>/upload
 ```
 
-This will return a list of the paths the files were uploaded to in the server. You can then provide the following json payload for the file-based inputs in the `/call/predict` route:
+This will return a list containing the paths where the files reside on the server. You can then provide the following json payload for the file-based inputs in the `/call/predict` route:
 
 
 ```json
