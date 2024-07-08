@@ -1,7 +1,7 @@
 ---
 title: "Bootstrapping Apps with Gradio and ZeroGPU 🥾"
-date: "2024-06-27"
-updated: "2024-06-27"
+date: "2024-07-08"
+updated: "2024-07-08"
 categories:
   - "gradio"
   - "API"
