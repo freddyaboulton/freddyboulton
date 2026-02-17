@@ -22,6 +22,7 @@ export default {
       fontFamily: {
         sans: ["Poppins", "Arial", "sans-serif"],
         serif: ["Lora", "Georgia", "serif"],
+        hand: ["Caveat", "cursive"],
         mono: ["Menlo", "Monaco", "Courier", "monospace"],
       },
       fontSize: {

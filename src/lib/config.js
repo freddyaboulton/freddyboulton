@@ -29,10 +29,6 @@ export const navItems = [
 		route: '/#talks'
 	},
 	{
-		title: 'Publications',
-		route: '/#publications'
-	},
-	{
 		title: 'Blog',
 		route: '/blog'
 	},

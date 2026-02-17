@@ -21,7 +21,7 @@
 </svelte:head>
 
 <!-- HERO SECTION -->
-<section class="min-h-[85vh] flex items-center px-6 relative">
+<section class="px-6 pt-2 pb-16 md:pt-4 md:pb-24">
 	<div class="max-w-4xl mx-auto w-full">
 		<div class="md:flex items-center gap-12">
 			<!-- Profile Image -->
@@ -37,13 +37,13 @@
 
 			<!-- Intro Text -->
 			<div>
-				<p class="text-highlight font-medium mb-2 animate-on-scroll" use:inview>Hi, I'm</p>
+				<p class="font-hand text-2xl text-highlight mb-2 animate-on-scroll" use:inview>Hi, I'm</p>
 				<h1 class="text-4xl md:text-5xl font-serif font-bold text-secondary mb-4 mt-0 animate-on-scroll" use:inview>
 					Freddy Boulton
 				</h1>
 
 				<p class="text-lg text-lighter leading-relaxed mb-6 max-w-lg animate-on-scroll" use:inview>
-					I'm a software engineer who loves building tools that help people do their best work. Right now I'm at <a href="https://huggingface.co" class="font-semibold">Hugging Face</a>, where I build and maintain <a href="https://www.gradio.app" class="font-semibold">Gradio</a> and <a href="https://github.com/freddyaboulton/fastrtc" class="font-semibold">FastRTC</a> — open-source libraries that make it easier to build and share ML applications.
+					I'm a software engineer who loves building tools at the intersection of open source and ML. Right now I'm at <a href="https://huggingface.co" class="font-semibold">Hugging Face</a>, where I am the Team Lead and a core maintainer of <a href="https://www.gradio.app" class="font-semibold">Gradio</a> and <a href="https://github.com/freddyaboulton/fastrtc" class="font-semibold">FastRTC</a> — open-source libraries that make it easier to build and share ML applications.
 				</p>
 
 				<!-- Social Icons -->
@@ -57,22 +57,10 @@
 					<a href="https://twitter.com/FreddyBoulworx" target="_blank" rel="noopener noreferrer" class="text-lighter hover:text-highlight transition-colors" aria-label="Twitter">
 						<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
 					</a>
-					<a href="https://huggingface.co/freddyaboulton" target="_blank" rel="noopener noreferrer" class="text-lighter hover:text-highlight transition-colors" aria-label="Hugging Face">
-						<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 1.5c4.687 0 8.5 3.813 8.5 8.5s-3.813 8.5-8.5 8.5S3.5 16.687 3.5 12 7.313 3.5 12 3.5zM8.5 10a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm7 0a1.5 1.5 0 100 3 1.5 1.5 0 000-3zM7.5 15.5s1.5 2 4.5 2 4.5-2 4.5-2"/></svg>
-					</a>
+					<a href="https://huggingface.co/freddyaboulton" target="_blank" rel="noopener noreferrer" class="text-lighter hover:text-highlight transition-colors text-xl leading-none" aria-label="Hugging Face">🤗</a>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-
-<!-- STATS BAR -->
-<section class="py-14 px-6 bg-warm-grid border-y border-divider">
-	<div class="max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
-		<StatCounter target={885} suffix="+" label="Pull Requests" />
-		<StatCounter target={1.1} suffix="M Users" label="Gradio Downloads" />
-		<StatCounter target={4500} suffix="+" label="GitHub Stars" />
-		<StatCounter target={9} suffix="+" label="Years Experience" />
 	</div>
 </section>
 
@@ -135,20 +123,26 @@
 		<SectionHeading id="projects-heading" title="What I Build" subtitle="Open-source tools I've created or help maintain." number="02" />
 
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-			<ProjectCard
-				title="Gradio"
-				description="Open-source Python library for building ML-powered web applications. Used by Hugging Face Spaces, Stable Diffusion WebUI, and thousands of ML projects worldwide."
-				stat="35,000+ Stars"
-				link="https://github.com/gradio-app/gradio"
-				color="highlight"
-			/>
-			<ProjectCard
-				title="FastRTC"
-				description="Real-time communication framework for Python. Build voice AI agents, real-time video processing, and streaming ML apps with WebRTC."
-				stat="4,500+ Stars"
-				link="https://github.com/freddyaboulton/fastrtc"
-				color="green"
-			/>
+			<div class="relative">
+				<!-- <span class="hidden lg:block absolute -right-4 top-3 translate-x-full font-hand text-base text-highlight -rotate-2">&#8592; proudest work</span> -->
+				<ProjectCard
+					title="Gradio"
+					description="Open-source Python library for building ML-powered web applications. Used by Hugging Face Spaces, Stable Diffusion WebUI, and thousands of ML projects worldwide."
+					stat="35,000+ Stars"
+					link="https://github.com/gradio-app/gradio"
+					color="highlight"
+				/>
+			</div>
+			<div class="relative">
+				<!-- <span class="hidden lg:block absolute -left-4 bottom-3 -translate-x-full font-hand text-base text-green rotate-1">built this from scratch &#8594;</span> -->
+				<ProjectCard
+					title="FastRTC"
+					description="Real-time communication framework for Python. Build voice AI agents, real-time video processing, and streaming ML apps with WebRTC."
+					stat="4,500+ Stars"
+					link="https://github.com/freddyaboulton/fastrtc"
+					color="green"
+				/>
+			</div>
 			<ProjectCard
 				title="Gradio Custom Components"
 				description="Designed and built the plugin ecosystem for Gradio, enabling developers to create and share custom UI components for ML apps."
@@ -178,71 +172,74 @@
 				<h3 class="text-lg font-serif font-bold text-secondary m-0 mb-5">Conference Talks</h3>
 
 				<div class="space-y-4">
-					<div class="bg-surface rounded-xl p-5 border border-divider shadow-sm animate-on-scroll hover:shadow-md transition-all" use:inview>
-						<span class="text-xs font-medium px-2 py-1 rounded-full bg-surfaceLight text-highlight">Conference</span>
+					<a href="https://odsc.com/speakers/unlock-the-future-of-ai-real-time-voice-video/" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-xl p-5 border border-divider shadow-sm animate-on-scroll hover:shadow-md transition-all no-underline" use:inview>
+						<span class="text-xs font-medium px-2 py-1 rounded-full bg-surfaceLight text-highlight">ODSC East 2025</span>
+						<h4 class="text-base font-serif font-bold text-secondary m-0 mt-3 mb-1">Unlock the Future of AI: Real-Time Voice & Video</h4>
+						<p class="text-lighter text-sm m-0">Building real-time AI applications with FastRTC and WebRTC</p>
+					</a>
+
+					<a href="https://confs.space/conf/mlops-world-genai-summit-2025/gradio-the-web-framework-for-humans-and-machines/" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-xl p-5 border border-divider shadow-sm animate-on-scroll hover:shadow-md transition-all no-underline" use:inview>
+						<span class="text-xs font-medium px-2 py-1 rounded-full bg-surfaceLight text-green">MLOps World 2025</span>
+						<h4 class="text-base font-serif font-bold text-secondary m-0 mt-3 mb-1">Gradio: The Web Framework for Humans and Machines</h4>
+						<p class="text-lighter text-sm m-0">How Gradio bridges the gap between ML models and end users</p>
+					</a>
+
+					<a href="https://odsc.com/speakers/a-practical-tutorial-on-building-machine-learning-demos-with-gradio-2/" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-xl p-5 border border-divider shadow-sm animate-on-scroll hover:shadow-md transition-all no-underline" use:inview>
+						<span class="text-xs font-medium px-2 py-1 rounded-full bg-surfaceLight text-amber">ODSC East 2024</span>
+						<h4 class="text-base font-serif font-bold text-secondary m-0 mt-3 mb-1">Building Machine Learning Demos with Gradio</h4>
+						<p class="text-lighter text-sm m-0">A practical tutorial on creating and sharing ML applications</p>
+					</a>
+
+					<a href="https://maven.com/parlance-labs/fine-tuning" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-xl p-5 border border-divider shadow-sm animate-on-scroll hover:shadow-md transition-all no-underline" use:inview>
+						<span class="text-xs font-medium px-2 py-1 rounded-full bg-surfaceLight text-highlight">Mastering LLMs 2024</span>
 						<h4 class="text-base font-serif font-bold text-secondary m-0 mt-3 mb-1">Mastering LLMs Conference</h4>
-						<p class="text-lighter text-sm m-0">Building Real-Time AI Applications with Gradio and WebRTC</p>
-					</div>
-
-					<div class="bg-surface rounded-xl p-5 border border-divider shadow-sm animate-on-scroll hover:shadow-md transition-all" use:inview>
-						<span class="text-xs font-medium px-2 py-1 rounded-full bg-surfaceLight text-green">Conference</span>
-						<h4 class="text-base font-serif font-bold text-secondary m-0 mt-3 mb-1">ODSC East</h4>
-						<p class="text-lighter text-sm m-0">Machine Learning in Production with Open Source Tools</p>
-					</div>
-
-					<div class="bg-surface rounded-xl p-5 border border-divider shadow-sm animate-on-scroll hover:shadow-md transition-all" use:inview>
-						<span class="text-xs font-medium px-2 py-1 rounded-full bg-surfaceLight text-amber">Conference</span>
-						<h4 class="text-base font-serif font-bold text-secondary m-0 mt-3 mb-1">MLOps World</h4>
-						<p class="text-lighter text-sm m-0">AutoML and Automated Machine Learning Pipelines</p>
-					</div>
+						<p class="text-lighter text-sm m-0">Guest speaker on building interactive ML demos</p>
+					</a>
 				</div>
 			</div>
 
-			<!-- Featured Writing -->
+			<!-- Writing & Publications -->
 			<div>
-				<h3 class="text-lg font-serif font-bold text-secondary m-0 mb-5">Featured Writing</h3>
+				<h3 class="text-lg font-serif font-bold text-secondary m-0 mb-5">Writing & Publications</h3>
 
 				<div class="space-y-4">
-					<a href="https://huggingface.co/blog?author=freddyaboulton" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-xl p-5 border border-divider shadow-sm animate-on-scroll hover:shadow-md transition-all no-underline" use:inview>
+					<a href="https://huggingface.co/blog/gradio-mcp-servers" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-xl p-5 border border-divider shadow-sm animate-on-scroll hover:shadow-md transition-all no-underline" use:inview>
 						<span class="text-xs font-medium px-2 py-1 rounded-full bg-surfaceLight text-highlight">HF Blog</span>
-						<h4 class="text-base font-serif font-bold text-secondary m-0 mt-3 mb-1">Hugging Face Blog Posts</h4>
-						<p class="text-lighter text-sm m-0">Technical articles on Gradio features, ML demos, and real-time AI applications</p>
+						<h4 class="text-base font-serif font-bold text-secondary m-0 mt-3 mb-1">Gradio MCP Servers</h4>
+						<p class="text-lighter text-sm m-0">Turning Gradio apps into Model Context Protocol servers</p>
 					</a>
 
-					<a href="https://realpython.com/logistic-regression-python/" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-xl p-5 border border-divider shadow-sm animate-on-scroll hover:shadow-md transition-all no-underline" use:inview>
-						<span class="text-xs font-medium px-2 py-1 rounded-full bg-surfaceLight text-green">Real Python</span>
-						<h4 class="text-base font-serif font-bold text-secondary m-0 mt-3 mb-1">Logistic Regression in Python</h4>
-						<p class="text-lighter text-sm m-0">Comprehensive guide to logistic regression with scikit-learn and statsmodels</p>
+					<a href="https://huggingface.co/blog/fastrtc-cloudflare" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-xl p-5 border border-divider shadow-sm animate-on-scroll hover:shadow-md transition-all no-underline" use:inview>
+						<span class="text-xs font-medium px-2 py-1 rounded-full bg-surfaceLight text-green">HF Blog</span>
+						<h4 class="text-base font-serif font-bold text-secondary m-0 mt-3 mb-1">FastRTC + Cloudflare</h4>
+						<p class="text-lighter text-sm m-0">Global real-time AI infrastructure with Cloudflare's TURN network</p>
+					</a>
+
+					<a href="https://huggingface.co/blog/gradio-reload" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-xl p-5 border border-divider shadow-sm animate-on-scroll hover:shadow-md transition-all no-underline" use:inview>
+						<span class="text-xs font-medium px-2 py-1 rounded-full bg-surfaceLight text-amber">HF Blog</span>
+						<h4 class="text-base font-serif font-bold text-secondary m-0 mt-3 mb-1">Gradio Reload Mode</h4>
+						<p class="text-lighter text-sm m-0">Instant UI iteration during Gradio development</p>
+					</a>
+
+					<a href="https://realpython.com/python-memory-management/" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-xl p-5 border border-divider shadow-sm animate-on-scroll hover:shadow-md transition-all no-underline" use:inview>
+						<span class="text-xs font-medium px-2 py-1 rounded-full bg-surfaceLight text-highlight">Real Python</span>
+						<h4 class="text-base font-serif font-bold text-secondary m-0 mt-3 mb-1">Memory Management in Python</h4>
+						<p class="text-lighter text-sm m-0">A case study on debugging memory problems with open source tools</p>
+					</a>
+
+					<a href="https://arxiv.org/abs/1911.10298" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-xl p-5 border border-divider shadow-sm animate-on-scroll hover:shadow-md transition-all no-underline" use:inview>
+						<span class="text-xs font-medium px-2 py-1 rounded-full bg-surfaceLight text-green">Paper</span>
+						<h4 class="text-base font-serif font-bold text-secondary m-0 mt-3 mb-1">CoverNet: Multimodal Behavior Prediction using Trajectory Sets</h4>
+						<p class="text-lighter text-sm m-0">arXiv &middot; 2019</p>
+					</a>
+
+					<a href="https://arxiv.org/abs/2007.13732" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-xl p-5 border border-divider shadow-sm animate-on-scroll hover:shadow-md transition-all no-underline" use:inview>
+						<span class="text-xs font-medium px-2 py-1 rounded-full bg-surfaceLight text-amber">Paper</span>
+						<h4 class="text-base font-serif font-bold text-secondary m-0 mt-3 mb-1">Motion Prediction using Trajectory Sets and Self-Driving Domain Knowledge</h4>
+						<p class="text-lighter text-sm m-0">arXiv &middot; 2020</p>
 					</a>
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
-
-<!-- PUBLICATIONS -->
-<section class="py-20 px-6 bg-warm-grid" id="publications">
-	<div class="max-w-4xl mx-auto">
-		<SectionHeading id="publications-heading" title="Publications" subtitle="Research papers and in-depth technical articles." number="04" />
-
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-			<a href="https://realpython.com/logistic-regression-python/" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-xl p-6 border border-divider shadow-sm animate-on-scroll hover:shadow-md hover:-translate-y-1 transition-all no-underline" use:inview>
-				<span class="text-xs font-medium px-2 py-1 rounded-full bg-surfaceLight text-green mb-3 inline-block">Article</span>
-				<h4 class="text-base font-serif font-bold text-secondary m-0 mb-2">Logistic Regression in Python</h4>
-				<p class="text-lighter text-sm m-0">Real Python &middot; 2020</p>
-			</a>
-
-			<a href="https://arxiv.org/abs/2104.12293" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-xl p-6 border border-divider shadow-sm animate-on-scroll hover:shadow-md hover:-translate-y-1 transition-all no-underline" use:inview>
-				<span class="text-xs font-medium px-2 py-1 rounded-full bg-surfaceLight text-amber mb-3 inline-block">Paper</span>
-				<h4 class="text-base font-serif font-bold text-secondary m-0 mb-2">nuPlan: A closed-loop ML-based planning benchmark</h4>
-				<p class="text-lighter text-sm m-0">arXiv &middot; 2021</p>
-			</a>
-
-			<a href="https://arxiv.org/abs/2106.11810" target="_blank" rel="noopener noreferrer" class="block bg-surface rounded-xl p-6 border border-divider shadow-sm animate-on-scroll hover:shadow-md hover:-translate-y-1 transition-all no-underline" use:inview>
-				<span class="text-xs font-medium px-2 py-1 rounded-full bg-surfaceLight text-highlight mb-3 inline-block">Paper</span>
-				<h4 class="text-base font-serif font-bold text-secondary m-0 mb-2">nuPlan: A closed-loop ML-based planning benchmark for autonomous vehicles</h4>
-				<p class="text-lighter text-sm m-0">arXiv &middot; 2021</p>
-			</a>
 		</div>
 	</div>
 </section>
@@ -250,9 +247,11 @@
 <!-- EDUCATION -->
 <section class="py-20 px-6" id="education">
 	<div class="max-w-3xl mx-auto">
-		<SectionHeading id="education-heading" title="Education" number="05" />
+		<SectionHeading id="education-heading" title="Education" number="04" />
 
-		<div class="bg-surface rounded-xl p-8 border border-divider shadow-sm mt-12 animate-on-scroll" use:inview>
+
+		<div class="relative bg-surface rounded-xl p-8 border border-divider shadow-sm mt-12 animate-on-scroll" use:inview>
+			<span class="hidden lg:block absolute -right-4 top-6 translate-x-full font-hand text-base text-amber -rotate-1">Go Maroons!</span>
 			<div class="flex items-start gap-6">
 				<div class="hidden sm:flex w-14 h-14 rounded-xl bg-surfaceLight items-center justify-center shrink-0">
 					<svg class="w-7 h-7 text-highlight" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -271,8 +270,21 @@
 	</div>
 </section>
 
+<!-- BY THE NUMBERS -->
+<section class="py-16 px-6 bg-warm-grid border-y border-divider">
+	<div class="max-w-4xl mx-auto">
+		<SectionHeading id="numbers-heading" title="By the Numbers" number="05" />
+		<div class="max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
+			<StatCounter target={885} suffix="+" label="Pull Requests" />
+			<StatCounter target={1.1} suffix="M Users" label="Gradio Downloads" />
+			<StatCounter target={4500} suffix="+" label="GitHub Stars" />
+			<StatCounter target={9} suffix="+" label="Years Experience" />
+		</div>
+	</div>
+</section>
+
 <!-- BLOG TEASER -->
-<section class="py-20 px-6 bg-warm-grid">
+<section class="py-20 px-6">
 	<div class="max-w-4xl mx-auto">
 		<SectionHeading id="blog-heading" title="From the Blog" subtitle="Things I've been thinking about and learning lately." number="06" />
 

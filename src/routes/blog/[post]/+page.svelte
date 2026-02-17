@@ -38,7 +38,9 @@
 			<span>Updated: {updated}</span>
 		{/if}
 	</div>
-	<div class="h-px w-full bg-divider mb-6"></div>
+	<svg class="w-full h-[6px] mb-6" preserveAspectRatio="none" viewBox="0 0 400 6" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0 3 Q 40 1, 80 3 Q 120 5, 160 2.5 Q 200 0.5, 240 3 Q 280 5, 320 2 Q 360 0.5, 400 3" stroke="var(--divider)" stroke-width="1.2" fill="none" />
+	</svg>
 
 	{#if !(showCoverImage === false) && coverImage}
 		<img
