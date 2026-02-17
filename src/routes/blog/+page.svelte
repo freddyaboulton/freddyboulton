@@ -6,14 +6,18 @@
 	export let data
 </script>
 
-
 <svelte:head>
 	<title>Blog</title>
 	<meta data-key="description" name="description" content={siteDescription}>
 </svelte:head>
 
-<h1 class="text-secondary flex justify-start mx-auto w-[100%] text-4xl font-bold mb-5 mt-10">Posts</h1>
+<div class="mb-10 mt-4">
+	<h1 class="text-4xl md:text-5xl font-bold text-secondary mb-3 mt-0">Blog</h1>
+	<div class="h-1 w-16 rounded bg-gradient-to-r from-highlight via-warning to-electric"></div>
+</div>
 
 <PostsList posts={data.posts} />
 
-<Pagination currentPage={1} totalPosts={data.total} />
+<div class="mt-8">
+	<Pagination currentPage={1} totalPosts={data.total} />
+</div>

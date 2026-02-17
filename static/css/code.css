@@ -7,18 +7,20 @@ code {
 
 pre {
 	overflow-y: auto;
-	color: var(--paper);
-	background: var(--darker);
+	color: var(--white);
+	background: var(--surface);
 	padding: 1rem;
 	font-size: 0.8rem;
+	border-radius: 0.5rem;
+	border: 1px solid var(--surfaceLight);
 }
 
 code {
-	color: var(--darker);
+	color: var(--highlight);
 	font-size: 1rem;
 	padding: .125em .25em;
 	border-radius: 4px;
-	background: var(--lighterAccent);
+	background: var(--surfaceLight);
 	white-space: pre;
 }
 
@@ -26,4 +28,5 @@ pre code {
 	padding: 0;
 	background: transparent;
 	font-size: 0.8rem;
+	color: var(--white);
 }

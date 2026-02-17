@@ -19,7 +19,7 @@ body {
 	line-height: 1.1;
 	font-family: var(--accentFont);
 	font-weight: bold;
-	color: var(--darker);
+	color: var(--white);
 	text-wrap: balance;
 }
 
@@ -40,12 +40,10 @@ h3 {
 
 h4 {
 	font-size: clamp(1.5rem, calc(1.5rem + 1vw), 1.8rem);
-	;
 }
 
 h5 {
 	font-size: clamp(1.35rem, calc(1.35rem + 1vw), 1.5rem);
-	;
 }
 
 h6 {
@@ -53,9 +51,13 @@ h6 {
 }
 
 a {
-	color: var(--darker);
+	color: var(--highlight);
 	text-decoration-thickness: 1px;
-	text-decoration-color: var(--dark);
+	text-decoration-color: var(--highlight);
+}
+
+a:hover {
+	color: var(--warning);
 }
 
 ul {
@@ -68,5 +70,5 @@ ul ul {
 }
 
 ul::marker {
-	color: var(--accent);
+	color: var(--highlight);
 }

@@ -7,24 +7,23 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Define your color palette
-        primary: "#F0EFEA", // Dark Olive Green
-        secondary: "#141413", // Dark Green
-        accent: "#FEFAE0", // Cream
-        highlight: "#DDA15E", // Tan
-        warning: "#BC6C25", // Light Brown
-        lighter:"#6B6B6B",
-        divider:"#dee2e6"
-        
+        primary: "#0F0F0F",
+        secondary: "#F5F5F0",
+        accent: "#F5F5F0",
+        highlight: "#FF6B35",
+        warning: "#FFD166",
+        electric: "#06D6A0",
+        surface: "#1A1A1A",
+        surfaceLight: "#2A2A2A",
+        lighter: "#9CA3AF",
+        divider: "#333333"
       },
       fontFamily: {
-        // Define your font families
         sans: ["Poppins", "Arial", "sans-serif"],
         serif: ["Georgia", "serif"],
         mono: ["Menlo", "Monaco", "Courier", "monospace"],
       },
       fontSize: {
-        // Define your font sizes
         xs: "0.75rem",
         sm: "0.875rem",
         base: "1rem",
@@ -35,9 +34,10 @@ export default {
         "4xl": "2.25rem",
         "5xl": "3rem",
         "6xl": "4rem",
+        "7xl": "5rem",
+        "8xl": "6rem",
       },
       spacing: {
-        // Define your spacing values
         0: "0",
         px: "1px",
         0.5: "0.125rem",
@@ -62,7 +62,6 @@ export default {
         64: "16rem",
       },
       boxShadow: {
-        // Define your shadow options
         sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
         DEFAULT:
           "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
@@ -70,12 +69,12 @@ export default {
         lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
         xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
         "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+        glow: "0 0 20px rgba(255, 107, 53, 0.3)",
         inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
-        outline: "0 0 0 3px rgba(66, 153, 225, 0.5)",
+        outline: "0 0 0 3px rgba(255, 107, 53, 0.5)",
         none: "none",
       },
       borderRadius: {
-        // Define your border radius options
         none: "0",
         sm: "0.125rem",
         DEFAULT: "0.25rem",
@@ -87,7 +86,6 @@ export default {
         full: "9999px",
       },
       screens: {
-        // Define your custom screen breakpoints
         sm: "640px",
         md: "768px",
         lg: "1024px",
@@ -96,5 +94,5 @@ export default {
       },
     }
   },
-    plugins: [require('@tailwindcss/typography')]
-  };
+  plugins: [require('@tailwindcss/typography')]
+};

@@ -1,24 +1,31 @@
 :root {
 	/* Colors */
-	--accent: #141413;
-	--background: #FAF9F8;
-	--lightAccent: #141413;
-	--lighterAccent: #E6E8E4;
-	--dark: #457B9D;
-	--darker: #141413;
-	--slate: #2F3948;
+	--accent: #FF6B35;
+	--background: #0F0F0F;
+	--lightAccent: #1A1A1A;
+	--lighterAccent: #2A2A2A;
+	--dark: #FF6B35;
+	--darker: #F5F5F0;
+	--slate: #F5F5F0;
 
-	--white: #fff;
-	--black: #152030;
+	--white: #F5F5F0;
+	--black: #0F0F0F;
 
 	--ink: var(--slate);
 	--paper: var(--background);
 
-	/**
-	 * These fonts are broken out into two separate variables from a previous iteration. I left
-	 * it in because it's nice to be able to split out the heading and body fonts.
-	 */
-	--accentFont: 'Atkinson Hyperlegible', Georgia, Times, serif;
-	--primaryFont: 'Atkinson Hyperlegible', sans-serif;
+	/* Accent colors */
+	--highlight: #FF6B35;
+	--warning: #FFD166;
+	--electric: #06D6A0;
+	--surface: #1A1A1A;
+	--surfaceLight: #2A2A2A;
+
+	/* Gradients */
+	--gradient-accent: linear-gradient(135deg, #FF6B35, #FFD166, #06D6A0);
+	--gradient-subtle: linear-gradient(135deg, #1A1A1A, #2A2A2A);
+
+	--accentFont: 'Poppins', sans-serif;
+	--primaryFont: 'Poppins', sans-serif;
 	--codeFont: 'Fira Code', monospace;
 }
