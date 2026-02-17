@@ -15,7 +15,7 @@
 >
 	<span class="sr-only">Toggle hamburger menu</span>
 	<svg
-		class="w-5 h-5 text-secondary"
+		class="w-5 h-5"
 		aria-hidden="true"
 		xmlns="http://www.w3.org/2000/svg"
 		fill="none"

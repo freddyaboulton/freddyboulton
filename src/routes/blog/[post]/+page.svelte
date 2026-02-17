@@ -28,16 +28,17 @@
 	Back to blog
 </a>
 
-<article class="prose prose-invert max-w-none">
-	<h1 class="text-3xl md:text-4xl font-bold text-secondary mb-2 mt-0">{title}</h1>
+<article class="prose max-w-none">
+	<h1 class="text-3xl md:text-4xl font-serif font-bold text-secondary mb-2 mt-0">{title}</h1>
 
-	<div class="flex items-center gap-4 text-sm text-lighter mb-6">
+	<div class="flex items-center gap-4 text-sm text-lighter mb-4">
 		<span>Published: {date}</span>
 		{#if updated}
 			<span>&middot;</span>
 			<span>Updated: {updated}</span>
 		{/if}
 	</div>
+	<div class="h-px w-full bg-divider mb-6"></div>
 
 	{#if !(showCoverImage === false) && coverImage}
 		<img
@@ -59,7 +60,7 @@
 				{#each categories as category}
 					<a
 						href="/blog/category/{category}/"
-						class="text-xs px-3 py-1 rounded-full bg-surfaceLight text-highlight hover:bg-highlight hover:text-white transition-colors no-underline"
+						class="text-xs px-3 py-1 rounded-full bg-surfaceLight text-lighter hover:bg-highlight hover:text-white transition-colors no-underline"
 					>
 						{category}
 					</a>

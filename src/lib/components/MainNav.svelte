@@ -33,7 +33,7 @@
 
 	<div
 		id="dropdownHover"
-		class="bg-surface border border-divider divide-y divide-divider rounded-lg shadow-lg w-48 absolute top-[55px] right-2 mt-1"
+		class="bg-surface border border-divider rounded-lg shadow-lg w-48 absolute top-[55px] right-2 mt-1"
 		class:hidden={$isMenuOpen ? "" : "hidden"}
 		use:clickOutside
 		on:click_outside={() => { isMenuOpen.set(false); }}

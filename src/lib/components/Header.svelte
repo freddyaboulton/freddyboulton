@@ -24,23 +24,22 @@
 	class:header-solid={!isHome || scrolled}
 >
 	<div
-		class="w-full mx-auto max-w-screen-2xl p-4 flex items-center justify-between"
+		class="w-full mx-auto max-w-screen-xl p-4 flex items-center justify-between"
 	>
-		<a href="/" class="text-secondary font-bold text-sm sm:text-base md:text-xl hover:text-highlight transition-colors">
+		<a href="/" class="text-secondary font-serif font-bold text-sm sm:text-base md:text-xl hover:text-highlight transition-colors no-underline">
 			{siteTitle}
 		</a>
 		<MainNav />
 	</div>
 </header>
 
-<!-- Spacer to prevent content from hiding behind fixed header -->
 <div class="h-[60px]"></div>
 
 <style>
 	.header-solid {
-		background-color: rgba(15, 15, 15, 0.95);
+		background-color: rgba(250, 248, 244, 0.95);
 		backdrop-filter: blur(10px);
 		-webkit-backdrop-filter: blur(10px);
-		border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+		border-bottom: 1px solid rgba(232, 228, 222, 0.8);
 	}
 </style>

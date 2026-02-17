@@ -12,8 +12,8 @@
 /* Scroll-triggered animations */
 .animate-on-scroll {
 	opacity: 0;
-	transform: translateY(2rem);
-	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+	transform: translateY(1.5rem);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .animate-on-scroll.in-view {
@@ -23,8 +23,8 @@
 
 .animate-from-left {
 	opacity: 0;
-	transform: translateX(-2rem);
-	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+	transform: translateX(-1.5rem);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .animate-from-left.in-view {
@@ -34,8 +34,8 @@
 
 .animate-from-right {
 	opacity: 0;
-	transform: translateX(2rem);
-	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+	transform: translateX(1.5rem);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .animate-from-right.in-view {
@@ -45,8 +45,8 @@
 
 .animate-scale {
 	opacity: 0;
-	transform: scale(0.95);
-	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+	transform: scale(0.97);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .animate-scale.in-view {
@@ -54,58 +54,15 @@
 	transform: scale(1);
 }
 
-/* Gradient text effect */
-.gradient-text {
-	background: linear-gradient(135deg, #FF6B35, #FFD166, #06D6A0);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	background-size: 200% 200%;
-	animation: gradient-shift 4s ease infinite;
-}
-
-/* Glow pulse effect */
-.glow-pulse {
-	animation: glow-pulse 3s ease-in-out infinite;
-}
-
-@keyframes glow-pulse {
-	0%, 100% {
-		box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
-	}
-	50% {
-		box-shadow: 0 0 40px rgba(255, 107, 53, 0.5);
-	}
-}
-
-@keyframes gradient-shift {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-@keyframes bounce {
-	0%, 20%, 50%, 80%, 100% {
-		transform: translateY(0);
-	}
-	40% {
-		transform: translateY(-8px);
-	}
-	60% {
-		transform: translateY(-4px);
-	}
+/* Warm section with fainter dot grid */
+.bg-warm-grid {
+	background-color: #F5F2EC;
+	background-image: radial-gradient(circle, var(--grid-dot-faint) 1px, transparent 1px);
+	background-size: var(--grid-spacing) var(--grid-spacing);
 }
 
 /* Stagger delays for child animations */
 .animate-on-scroll:nth-child(1) { transition-delay: 0s; }
-.animate-on-scroll:nth-child(2) { transition-delay: 0.1s; }
-.animate-on-scroll:nth-child(3) { transition-delay: 0.2s; }
-.animate-on-scroll:nth-child(4) { transition-delay: 0.3s; }
-.animate-on-scroll:nth-child(5) { transition-delay: 0.4s; }
-.animate-on-scroll:nth-child(6) { transition-delay: 0.5s; }
+.animate-on-scroll:nth-child(2) { transition-delay: 0.08s; }
+.animate-on-scroll:nth-child(3) { transition-delay: 0.16s; }
+.animate-on-scroll:nth-child(4) { transition-delay: 0.24s; }

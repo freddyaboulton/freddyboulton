@@ -44,10 +44,10 @@
 	use:inview={{ threshold: 0.5 }}
 	on:inview={animateCount}
 >
-	<div class="text-4xl md:text-5xl font-bold gradient-text">
+	<div class="text-3xl md:text-4xl font-serif font-bold text-highlight">
 		{displayValue}{suffix}
 	</div>
-	<div class="text-lighter text-sm mt-2 uppercase tracking-wider">
+	<div class="text-lighter text-sm mt-2">
 		{label}
 	</div>
 </div>

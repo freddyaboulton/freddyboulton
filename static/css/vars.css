@@ -1,31 +1,34 @@
 :root {
 	/* Colors */
-	--accent: #FF6B35;
-	--background: #0F0F0F;
-	--lightAccent: #1A1A1A;
-	--lighterAccent: #2A2A2A;
-	--dark: #FF6B35;
-	--darker: #F5F5F0;
-	--slate: #F5F5F0;
+	--accent: #C2724E;
+	--background: #FAF8F4;
+	--lightAccent: #F5F2EC;
+	--lighterAccent: #F3F0EA;
+	--dark: #C2724E;
+	--darker: #2D2926;
+	--slate: #2D2926;
 
-	--white: #F5F5F0;
-	--black: #0F0F0F;
+	--white: #FFFFFF;
+	--black: #2D2926;
 
-	--ink: var(--slate);
+	--ink: var(--darker);
 	--paper: var(--background);
 
 	/* Accent colors */
-	--highlight: #FF6B35;
-	--warning: #FFD166;
-	--electric: #06D6A0;
-	--surface: #1A1A1A;
-	--surfaceLight: #2A2A2A;
+	--highlight: #C2724E;
+	--green: #3B7D6E;
+	--amber: #D4A84B;
+	--surface: #FEFDFB;
+	--surfaceLight: #F3F0EA;
+	--divider: #E8E4DE;
+	--lighter: #6B6458;
 
-	/* Gradients */
-	--gradient-accent: linear-gradient(135deg, #FF6B35, #FFD166, #06D6A0);
-	--gradient-subtle: linear-gradient(135deg, #1A1A1A, #2A2A2A);
+	/* Dot grid */
+	--grid-dot: rgba(45, 41, 38, 0.07);
+	--grid-dot-faint: rgba(45, 41, 38, 0.035);
+	--grid-spacing: 24px;
 
-	--accentFont: 'Poppins', sans-serif;
+	--accentFont: 'Lora', Georgia, serif;
 	--primaryFont: 'Poppins', sans-serif;
 	--codeFont: 'Fira Code', monospace;
 }

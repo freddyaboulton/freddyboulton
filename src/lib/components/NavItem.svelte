@@ -12,13 +12,13 @@
 	};
 </script>
 
-<li class="text-sm sm:text-base md:text-lg p-2">
+<li class="text-sm sm:text-base md:text-base p-2">
 	<a
 		{href}
 		on:click={maybeCloseMenu}
 		class:active={isCurrentPage}
 		aria-current={isCurrentPage ? "page" : false}
-		class="text-secondary hover:text-highlight transition-colors {isCurrentPage && !href.startsWith('/#') ? 'font-semibold text-highlight' : ''}"
+		class="text-lighter hover:text-secondary transition-colors no-underline {isCurrentPage && !href.startsWith('/#') ? 'font-semibold text-secondary' : ''}"
 	>
 		<slot />
 	</a>

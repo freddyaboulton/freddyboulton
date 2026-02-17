@@ -12,8 +12,12 @@
 </svelte:head>
 
 <div class="mb-10 mt-4">
-	<h1 class="text-4xl md:text-5xl font-bold text-secondary mb-3 mt-0">Blog</h1>
-	<div class="h-1 w-16 rounded bg-gradient-to-r from-highlight via-warning to-electric"></div>
+	<div class="flex items-center gap-3 mb-4">
+		<span class="font-mono text-sm text-lighter">~</span>
+		<div class="h-px flex-1 bg-divider"></div>
+	</div>
+	<h1 class="text-4xl md:text-5xl font-serif font-bold text-secondary mb-2 mt-0">Blog</h1>
+	<p class="text-lighter">Things I've been learning, building, and thinking about.</p>
 </div>
 
 <PostsList posts={data.posts} />

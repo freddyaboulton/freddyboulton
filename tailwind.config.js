@@ -7,20 +7,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#0F0F0F",
-        secondary: "#F5F5F0",
-        accent: "#F5F5F0",
-        highlight: "#FF6B35",
-        warning: "#FFD166",
-        electric: "#06D6A0",
-        surface: "#1A1A1A",
-        surfaceLight: "#2A2A2A",
-        lighter: "#9CA3AF",
-        divider: "#333333"
+        primary: "#FAF8F4",
+        secondary: "#2D2926",
+        accent: "#FAF8F4",
+        highlight: "#C2724E",
+        green: "#3B7D6E",
+        amber: "#D4A84B",
+        surface: "#FEFDFB",
+        surfaceLight: "#F3F0EA",
+        lighter: "#6B6458",
+        divider: "#E8E4DE",
+        warm: "#F5F2EC",
       },
       fontFamily: {
         sans: ["Poppins", "Arial", "sans-serif"],
-        serif: ["Georgia", "serif"],
+        serif: ["Lora", "Georgia", "serif"],
         mono: ["Menlo", "Monaco", "Courier", "monospace"],
       },
       fontSize: {
@@ -35,7 +36,6 @@ export default {
         "5xl": "3rem",
         "6xl": "4rem",
         "7xl": "5rem",
-        "8xl": "6rem",
       },
       spacing: {
         0: "0",
@@ -62,16 +62,13 @@ export default {
         64: "16rem",
       },
       boxShadow: {
-        sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
-        DEFAULT:
-          "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-        md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-        lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-        xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-        "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
-        glow: "0 0 20px rgba(255, 107, 53, 0.3)",
-        inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
-        outline: "0 0 0 3px rgba(255, 107, 53, 0.5)",
+        sm: "0 1px 2px 0 rgba(45, 41, 38, 0.04)",
+        DEFAULT: "0 1px 3px 0 rgba(45, 41, 38, 0.06), 0 1px 2px 0 rgba(45, 41, 38, 0.04)",
+        md: "0 4px 6px -1px rgba(45, 41, 38, 0.06), 0 2px 4px -1px rgba(45, 41, 38, 0.04)",
+        lg: "0 10px 15px -3px rgba(45, 41, 38, 0.07), 0 4px 6px -2px rgba(45, 41, 38, 0.04)",
+        xl: "0 20px 25px -5px rgba(45, 41, 38, 0.08), 0 10px 10px -5px rgba(45, 41, 38, 0.03)",
+        warm: "0 4px 14px 0 rgba(194, 114, 78, 0.10)",
+        inner: "inset 0 2px 4px 0 rgba(45, 41, 38, 0.04)",
         none: "none",
       },
       borderRadius: {
