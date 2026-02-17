@@ -1,5 +1,9 @@
+html {
+	scroll-behavior: smooth;
+}
+
 *:focus {
-	outline: 2px solid var(--accent);
+	outline: 2px solid var(--highlight);
 	outline-offset: 2px;
 }
 
@@ -12,7 +16,9 @@ body {
 	min-height: 100vh;
 	color: var(--ink);
 	font-family: var(--primaryFont);
-	background: var(--paper);
+	background-color: var(--paper);
+	background-image: radial-gradient(circle, var(--grid-dot) 1px, transparent 1px);
+	background-size: var(--grid-spacing) var(--grid-spacing);
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }

@@ -2,17 +2,37 @@
 	export let posts = []
 </script>
 
-
-<ul class="no-bullets">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 	{#each posts as post}
-	<li class="justify-between py-4 flex-col md:flex-row" >
-		<h2 class="text-2xl font-bold text-secondary">
-			<a href="/blog/{post.slug}">
-				{post.title}
-			</a>
-		</h2>
-		<p class="text-sm text-lighter py-2 font-medium" >{post.date}</p>
-		<p class="text-lg text-lighter" >{post.excerpt}</p>
-	</li>
+		<a
+			href="/blog/{post.slug}"
+			class="block bg-surface rounded-xl overflow-hidden border border-divider shadow-sm hover:shadow-md hover:-translate-y-1 transition-all no-underline group"
+		>
+			{#if post.coverImage}
+				<img
+					src={post.coverImage}
+					alt={post.title}
+					class="w-full h-48 object-cover"
+				/>
+			{:else}
+				<div class="w-full h-48 bg-surfaceLight"></div>
+			{/if}
+			<div class="p-5">
+				{#if post.categories && post.categories.length > 0}
+					<div class="flex flex-wrap gap-2 mb-3">
+						{#each post.categories as category}
+							<span class="text-xs px-2 py-1 rounded-full bg-surfaceLight text-lighter">{category}</span>
+						{/each}
+					</div>
+				{/if}
+				<h2 class="text-lg font-serif font-bold text-secondary m-0 mb-2 group-hover:text-highlight transition-colors">
+					{post.title}
+				</h2>
+				<p class="text-sm text-lighter m-0 mb-2">{post.date}</p>
+				{#if post.excerpt}
+					<p class="text-sm text-lighter m-0 line-clamp-2">{post.excerpt}</p>
+				{/if}
+			</div>
+		</a>
 	{/each}
-</ul>
+</div>

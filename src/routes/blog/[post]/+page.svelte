@@ -1,4 +1,3 @@
-<!-- This file renders each individual blog post for reading. Be sure to update the svelte:head below -->
 <script>
 	export let data;
 
@@ -8,7 +7,6 @@
 </script>
 
 <svelte:head>
-	<!-- Be sure to add your image files and un-comment the lines below -->
 	<title>{title}</title>
 	<meta data-key="description" name="description" content={excerpt} />
 	<meta property="og:type" content="article" />
@@ -22,11 +20,28 @@
 	<meta name="twitter:image" content={coverImage ? `https://www.freddyboulton.com${coverImage}` : "https://www.freddyboulton.com/favicon.png" } />
 </svelte:head>
 
+<!-- Back to blog -->
+<a href="/blog" class="inline-flex items-center gap-2 text-lighter hover:text-highlight transition-colors no-underline mb-6 text-sm">
+	<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+		<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"></path>
+	</svg>
+	Back to blog
+</a>
 
-<article class="prose">
-	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
-	<h1 class="text-3xl font-bold text-secondary mb-1">{title}</h1>
-	
+<article class="prose max-w-none">
+	<h1 class="text-3xl md:text-4xl font-serif font-bold text-secondary mb-2 mt-0">{title}</h1>
+
+	<div class="flex items-center gap-4 text-sm text-lighter mb-4">
+		<span>Published: {date}</span>
+		{#if updated}
+			<span>&middot;</span>
+			<span>Updated: {updated}</span>
+		{/if}
+	</div>
+	<svg class="w-full h-[6px] mb-6" preserveAspectRatio="none" viewBox="0 0 400 6" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0 3 Q 40 1, 80 3 Q 120 5, 160 2.5 Q 200 0.5, 240 3 Q 280 5, 320 2 Q 360 0.5, 400 3" stroke="var(--divider)" stroke-width="1.2" fill="none" />
+	</svg>
+
 	{#if !(showCoverImage === false) && coverImage}
 		<img
 			src={coverImage}
@@ -34,34 +49,25 @@
 			style="aspect-ratio: {coverWidth} / {coverHeight};"
 			width={coverWidth}
 			height={coverHeight}
-			class="rounded-lg w-[100%] mb-1 mt-1"
-			/>
+			class="rounded-xl w-full mb-6"
+		/>
 	{/if}
-		<div class="w-[100%] flex items-center gap-2">
-			<h3 class="font-bold text-sm m-0">Published:</h3>
-			<p class="font-semi text-sm text-lighter m-0">{" "}{date}</p>
-		</div>
-		<div class="w-[100%] flex items-center mb-3 gap-2">
-			<h3 class="font-bold text-sm m-0">Updated:</h3>
-			<p class="font-semi text-sm text-lighter m-0">{" "}{updated}</p>
-		</div>
-
-	
 
 	<svelte:component this={PostContent} />
 
 	{#if categories}
-		<aside class="mb-5 ">
-			<h2 class="font-bold text-sm underline">Posted in:</h2>
-			<ul class="list-disc pl-4">
+		<aside class="mt-10 pt-6 border-t border-divider">
+			<h2 class="font-bold text-sm text-secondary m-0 mb-3">Posted in:</h2>
+			<div class="flex flex-wrap gap-2">
 				{#each categories as category}
-					<li class="font-semibold text-sm text-lighter">
-						<a href="/blog/category/{category}/">
-							{category}
-						</a>
-					</li>
+					<a
+						href="/blog/category/{category}/"
+						class="text-xs px-3 py-1 rounded-full bg-surfaceLight text-lighter hover:bg-highlight hover:text-white transition-colors no-underline"
+					>
+						{category}
+					</a>
 				{/each}
-			</ul>
+			</div>
 		</aside>
 	{/if}
 </article>

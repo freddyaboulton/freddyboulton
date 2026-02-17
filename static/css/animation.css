@@ -8,3 +8,61 @@
 		transform: translateX(0);
 	}
 }
+
+/* Scroll-triggered animations */
+.animate-on-scroll {
+	opacity: 0;
+	transform: translateY(1.5rem);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animate-on-scroll.in-view {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.animate-from-left {
+	opacity: 0;
+	transform: translateX(-1.5rem);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animate-from-left.in-view {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.animate-from-right {
+	opacity: 0;
+	transform: translateX(1.5rem);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animate-from-right.in-view {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.animate-scale {
+	opacity: 0;
+	transform: scale(0.97);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animate-scale.in-view {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* Warm section with fainter dot grid */
+.bg-warm-grid {
+	background-color: #F5F2EC;
+	background-image: radial-gradient(circle, var(--grid-dot-faint) 1px, transparent 1px);
+	background-size: var(--grid-spacing) var(--grid-spacing);
+}
+
+/* Stagger delays for child animations */
+.animate-on-scroll:nth-child(1) { transition-delay: 0s; }
+.animate-on-scroll:nth-child(2) { transition-delay: 0.08s; }
+.animate-on-scroll:nth-child(3) { transition-delay: 0.16s; }
+.animate-on-scroll:nth-child(4) { transition-delay: 0.24s; }

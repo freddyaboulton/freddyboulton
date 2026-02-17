@@ -1,5 +1,5 @@
 body {
-	line-height: 1.5;
+	line-height: 1.6;
 }
 
 @media (min-width: 48rem) {
@@ -16,7 +16,7 @@ body {
 
 :where(h1, h2, h3, h4, h5, h6) {
 	margin: 4.5rem 0 1rem;
-	line-height: 1.1;
+	line-height: 1.15;
 	font-family: var(--accentFont);
 	font-weight: bold;
 	color: var(--darker);
@@ -40,12 +40,10 @@ h3 {
 
 h4 {
 	font-size: clamp(1.5rem, calc(1.5rem + 1vw), 1.8rem);
-	;
 }
 
 h5 {
 	font-size: clamp(1.35rem, calc(1.35rem + 1vw), 1.5rem);
-	;
 }
 
 h6 {
@@ -53,9 +51,15 @@ h6 {
 }
 
 a {
-	color: var(--darker);
+	color: var(--highlight);
 	text-decoration-thickness: 1px;
-	text-decoration-color: var(--dark);
+	text-underline-offset: 2px;
+	text-decoration-color: var(--highlight);
+	transition: color 0.2s ease;
+}
+
+a:hover {
+	color: var(--darker);
 }
 
 ul {
@@ -68,5 +72,5 @@ ul ul {
 }
 
 ul::marker {
-	color: var(--accent);
+	color: var(--highlight);
 }

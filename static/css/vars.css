@@ -1,24 +1,35 @@
 :root {
 	/* Colors */
-	--accent: #141413;
-	--background: #FAF9F8;
-	--lightAccent: #141413;
-	--lighterAccent: #E6E8E4;
-	--dark: #457B9D;
-	--darker: #141413;
-	--slate: #2F3948;
+	--accent: #C2724E;
+	--background: #FAF8F4;
+	--lightAccent: #F5F2EC;
+	--lighterAccent: #F3F0EA;
+	--dark: #C2724E;
+	--darker: #2D2926;
+	--slate: #2D2926;
 
-	--white: #fff;
-	--black: #152030;
+	--white: #FFFFFF;
+	--black: #2D2926;
 
-	--ink: var(--slate);
+	--ink: var(--darker);
 	--paper: var(--background);
 
-	/**
-	 * These fonts are broken out into two separate variables from a previous iteration. I left
-	 * it in because it's nice to be able to split out the heading and body fonts.
-	 */
-	--accentFont: 'Atkinson Hyperlegible', Georgia, Times, serif;
-	--primaryFont: 'Atkinson Hyperlegible', sans-serif;
+	/* Accent colors */
+	--highlight: #C2724E;
+	--green: #3B7D6E;
+	--amber: #D4A84B;
+	--surface: #FEFDFB;
+	--surfaceLight: #F3F0EA;
+	--divider: #E8E4DE;
+	--lighter: #6B6458;
+
+	/* Dot grid */
+	--grid-dot: rgba(45, 41, 38, 0.07);
+	--grid-dot-faint: rgba(45, 41, 38, 0.035);
+	--grid-spacing: 24px;
+
+	--accentFont: 'Lora', Georgia, serif;
+	--primaryFont: 'Poppins', sans-serif;
+	--handFont: 'Caveat', cursive;
 	--codeFont: 'Fira Code', monospace;
 }
